@@ -1,0 +1,511 @@
+@font-face 
+  font-family: copperplate;
+  src: url('../fonts/copperplate.ttf');
+html 
+    overflow-x hidden
+    height 100%
+body 
+    position relative
+    height: 100%;
+    overflow-x hidden
+a  
+    color #010101
+    text-decoration none
+
+
+.background
+    position absolute
+    width: 100vw
+    height 100vh
+    display flex
+    align-items center
+    justify-content center
+    z-index -1
+    .diagonalLeft
+        width 100vw
+        height 30vh
+        background #EEEEEE
+        transform: skewY(145deg)
+
+.main
+    display flex
+    width 100vw
+    height 100vh
+    flex-direction column
+    position absolute
+    .webSiteTitle
+        font-family: copperlate 
+        font-size 1.5em
+        margin-left 1.5vw
+        margin-top 1vh
+    .menu 
+        display flex
+        flex-direction row 
+        justify-content flex-end
+        width 100vw
+        ul
+            display flex
+            flex-direction row 
+            justify-content space-between
+            font-family: copperlate 
+            font-size 1.1em
+            font-weight bold
+            a
+                display block
+                text-decoration none;
+                color #010101
+                li  
+                    padding-right 5em
+                :before    
+                    content ''
+                    display block
+                    position absolute
+                    background #F4E3CD
+                    width 3.5%
+                    height 2vh
+                    margin-top 0.4em
+                    z-index -1
+                    margin-right 10%
+                    transform scaleX(0)
+                    transform-origin left
+                    transition transform 0.2s ease-in
+            :hover li::before
+                transform scaleX(1)    
+    .scrollIndicator 
+        height 80vh
+        width 10vw
+        display flex
+        flex-direction column
+        align-items center
+        position absolute
+        .homeScroll
+            color #0101010
+            font-size 1.5em
+            transform rotateZ(-90deg)
+            font-family copperplate
+            font-weight bold
+            margin-top 20vh
+        .bar
+            display block
+            width 0.1vw
+            height 30vh
+            background #0101010
+            margin-top 10vh
+            transform-origin top
+    .titleContainer
+        width 100vw
+        display flex
+        align-items center 
+        flex-direction row
+        margin-top 12vh
+        padding-left 10vw
+        span 
+            font-family: 'Raleway', sans-serif;
+            font-weight bold
+            font-size 2.2em
+        .title 
+            padding-right 1vw
+        .titleTop
+            padding-bottom 1.5em
+            display block
+            position relative
+        .titleTop:before
+            content ''
+            display block
+            width 85%
+            height 1em
+            background #DEDEDE
+            position absolute
+            z-index -1
+            transform-origin left
+            animation scaleX 1s ease-in forwards
+        .bar
+            width 40vw
+            height 0.35vh
+            background-color #F5E4CD
+            margin-left 10vw
+    .mainContent
+        width 100vw
+        display flex
+        flex-direction row
+        .mainContentText
+            display flex
+            font-family: 'Raleway', sans-serif;
+            font-size 1.5em
+            flex-direction column
+            margin-left 10vw
+            margin-top 5vh
+            span 
+                margin-bottom 2vh
+                line-height 1em
+        .mainContentImg
+            width 20%
+            margin-left 20vw
+            img 
+                width 100%
+.descriptionContainer
+    position relative
+.scrollIndicator_2
+    width 100vw
+    height 5vh
+    display flex
+    justify-content flex-start
+    align-items center
+    .bar
+        width 30vw
+        height 0.35vh
+        background-color #F5E4CD
+        margin-left 10vw
+        transform scaleX(0)
+
+.contentContainer
+    width 100vw
+    display flex
+    flex-direction row
+    justify-content center
+    .background
+        position absolute
+        width: 100vw
+        height 100vh
+        display flex
+        align-items center
+        justify-content center
+        z-index -1
+        .diagonalRight
+            width 100vw
+            height 30vh
+            background #EEEEEE
+            transform: skewY(15deg)
+    .contentImage
+        width 20%
+        opacity 0
+        img 
+            width 100%
+    .contentText
+        font-family: 'Raleway', sans-serif;
+        font-size 1.5em
+        margin-top 5vh
+        display flex
+        flex-direction column
+        align-items center
+        width 50%
+        opacity 0
+        span 
+            display block
+            margin-left -2vw
+        .bar
+            width 40vw
+            height 0.35vh
+            background-color #F5E4CD
+            margin-top 10vh
+.imageContainer
+    display flex
+    width 100vw
+    flex-direction row
+    justify-content space-around
+    align-items center
+    opacity 0
+    img 
+        margin-top -40vh
+        width 20%
+.background_2
+    position absolute
+    width: 100vw
+    height 100vh
+    display flex
+    align-items center 
+    justify-content center
+    z-index -1
+    .diagonalLeft_2
+        width 100vw
+        height 30vh
+        background #EEEEEE
+        transform: skewY(160deg)
+.scrollIndicator_3
+    width 100vw
+    height 5vh
+    display flex
+    justify-content center
+    align-items center
+    margin-top 10vh
+    .bar
+        width 80vw
+        height 0.35vh
+        background-color #F5E4CD
+        transform scaleX(0)
+.background_4
+    position absolute
+    width: 100vw
+    height 100vh
+    display flex
+    align-items center 
+    justify-content center
+    z-index -1
+    .diagonalLeft_4
+        width 100vw
+        height 30vh
+        background #EEEEEE
+        transform: skewY(160deg)
+.contentContainer_2
+    width 100vw
+    display flex
+    flex-direction row
+    justify-content space-between
+    margin-top 5vh
+    .contentText_2
+        font-family: 'Raleway', sans-serif;
+        font-size 1.5em
+        margin-top 5vh
+        display flex
+        flex-direction column
+        align-items center
+        margin-left 10vw
+        .bar_2
+            width 40vw
+            height 0.35vh
+            background-color #F5E4CD
+            margin-top 10vh
+    .contentImage_2
+        margin-right 10%
+        width 20%
+        opacity 0
+        img 
+            width 100%
+    .background
+        position absolute
+        width: 100vw
+        height 100vh
+        display flex
+        align-items center
+        justify-content center
+        z-index -1
+        .diagonalRight
+            width 100vw
+            height 30vh
+            background #EEEEEE
+            transform: skewY(3deg)
+.imageContainer_2
+    width 100vw
+    display flex
+    flex-direction column
+    margin-top 2vh
+    .image
+        display flex
+        width 100vw
+        justify-content flex-start
+        margin-left 10vw
+        .down
+            width 20vw
+            padding 10vh
+            opacity 0
+            img 
+                width 100%
+        .up
+            width 20vw
+            padding 10vh
+            margin-top -15vw
+            opacity 0
+            img 
+                width 100%
+    .imageDown
+        display flex
+        width 100vw
+        justify-content center
+        div 
+            width 40vw
+            padding 5vh
+            img 
+                width 100%
+.scrollIndicator_4
+    width 100vw
+    height 5vh
+    display flex
+    justify-content center
+    align-items center
+    margin-top 10vh
+    .bar
+        width 80vw
+        height 0.35vh
+        background-color #F5E4CD
+.background_3
+    position absolute
+    width: 100vw
+    height 100vh
+    display flex
+    align-items center
+    justify-content center
+    z-index -1
+    .diagonalRight_3
+        width 100vw
+        height 30vh
+        background #EEEEEE
+        transform: skewY(15deg)
+.imageContainer_2
+    display flex
+    width 100vw
+    flex-direction column
+    .imageContainer_2Up
+        display flex
+        flex-direction row
+        align-items center
+        justify-content center
+        div 
+            display flex
+            justify-content center
+            align-items center
+            width 40vw
+            padding 5vh
+            img 
+                width 100%
+    .imageContainer_2Down
+        display flex
+        flex-direction row
+        align-items center
+        justify-content center
+        margin-bottom 10vh
+        div 
+            display flex
+            justify-content center
+            align-items center
+            width 40vw
+            padding 5vh
+            img 
+                width 100%
+footer 
+    display flex
+    position absolute
+    align-items center
+    justify-content space-between
+    bottom 0
+    background #F4E3CD
+    width 100vw
+    height 10vh
+    font-family copperplate
+    font-weight bold
+    .dev
+        display block
+        margin-left 10vw
+        margin-top 1vh
+    .design
+        display block
+        margin-right 10vw
+        margin-top 1vh
+
+
+
+@-webkit-keyframes textAnimation {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes textAnimation {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+    84%{
+        transform:translateY(0px) translateZ(0);
+        }
+    88%{
+        transform:translateY(-5px) translateZ(0);
+        }
+    92%{
+        transform:translateY(0px) translateZ(0);
+        }
+    96%{
+        transform:translateY(-5px) translateZ(0);
+        }
+    100%{
+        transform:translateY(0px) translateZ(0);
+        }
+}
+@keyframes scaleY {
+    from{
+        transform scaleY(0)
+        }
+    to{
+        transform scaleY(1)
+    }
+}
+@keyframes scaleX {
+    from{
+        transform scaleX(0)
+        }
+    to{
+        transform scaleX(1)
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity 0
+        }
+    to{
+        opacity 1
+    }
+}
+
+.scaleYbar
+    animation scaleY 1s ease-in forwards
+    
+.scaleXbar
+    animation scaleX 1s ease-in forwards
+.translateLeft
+    transform translateX(0) !important
+    animation opacity 1s ease-in forwards
+.opacity
+    animation opacity  1s ease-in forwards
+.textAnimation 
+	animation: textAnimation 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            
+
+        
+            
+
+
