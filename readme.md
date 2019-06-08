@@ -1,4 +1,4 @@
-# **PORTFOLIO D'EMMA ROMEO**
+# **PORTFOLIO EMMA ROMEO**
 Designed by Emma Romeo and Developed by Raphaël Robert
 
 
